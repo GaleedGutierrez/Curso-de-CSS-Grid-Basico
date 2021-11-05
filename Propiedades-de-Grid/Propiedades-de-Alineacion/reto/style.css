@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 15rem);
+    grid-auto-rows: 15rem;
+    place-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.item {
+    display: grid;
+    place-content: end;
+    color: #61a81e;
+    font-size: 2rem;
+    background-color: #add901;
+}
+
+
+p {
+    display: inline-block;
+    padding: 2rem;
+    background-color: #61a81e;
+}
+
+@media screen and (min-width: 360px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 15rem);
+    }
+}
+
+@media screen and (max-height: 321px) {
+    .contenedor {
+        grid-auto-columns: 15rem;
+        grid-auto-flow: column;
+    }
+}
