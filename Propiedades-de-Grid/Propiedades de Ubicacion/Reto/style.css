@@ -1,0 +1,73 @@
+:root {
+    --background-1: #ccee3a;
+    --background-2: #71bb05;
+    --background-3: #268201;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    grid-auto-rows: 15rem;
+    grid-template-areas: 
+        "item1 item2 item2"
+        "item3 item3 item4"
+        "item5 item6 item7";
+}
+
+.item {
+    font-size: 2rem;
+}
+
+.item-1,
+.item-4,
+.item-5 {
+    background-color: var(--background-1);
+}
+
+.item-2,
+.item-6 {
+    background-color: var(--background-2);
+}
+
+.item-3,
+.item-7 {
+    background-color: var(--background-3);
+}
+
+.item-1 {
+    grid-area: item1;
+}
+
+.item-2 {
+    grid-area: item2;
+}
+
+.item-3 {
+    grid-area: item3;
+}
+
+.item-4 {
+    grid-area: item4;
+}
+
+.item-5 {
+    grid-area: item5;
+}
+
+.item-6 {
+    grid-area: item6;
+}
+
+.item-7 {
+    grid-area: item7;
+}
