@@ -28,7 +28,7 @@ img {
 .main__hero {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-auto-rows: 40rem;
+    grid-auto-rows: 55rem;
     border-bottom: 0.1rem solid #ddd;
 }
 
@@ -97,4 +97,38 @@ img {
 
 .dishes__item--big {
     grid-area: 1 / 1 / 3 / 3;
+}
+
+.main__menu {
+    margin-block-end: 20rem;
+}
+
+.menu__title {
+    margin-block-end: 5rem;
+    font-size: 3.2rem;
+    font-weight: bolder;
+    text-align: center;
+    color: #333;
+}
+
+.menu__grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(10rem, 25rem));
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.menu__grid-item {
+    border-top-left-radius: 4rem;
+    background-color: coral;
+    padding: 1.5rem;
+}
+
+.menu__image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.menu__image {
+    object-fit: contain;
 }
