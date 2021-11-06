@@ -1,0 +1,14 @@
+.main__hero {
+    grid-template-columns: minmax(30rem, 500px);
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__image-container {
+    display: none;
+}
+
+.dishes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 10rem));
+    gap: 1.1rem;
+}

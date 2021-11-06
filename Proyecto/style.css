@@ -27,7 +27,7 @@ img {
 
 .main__hero {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: minmax(20rem, 1fr) 2fr;
     grid-auto-rows: 55rem;
     border-bottom: 0.1rem solid #ddd;
 }
@@ -80,7 +80,7 @@ img {
 
 .dishes-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(15rem, 20rem));
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 20rem));
     grid-auto-rows: 1fr;
     gap: 2.5rem;
     justify-content: center;
@@ -91,8 +91,8 @@ img {
     height: 100%;
 }
 
-.dishes__item img{
-   object-fit: cover;
+.dishes__item img {
+    object-fit: cover;
 }
 
 .dishes__item--big {
@@ -113,7 +113,7 @@ img {
 
 .menu__grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(10rem, 25rem));
+    grid-template-columns: repeat(auto-fit, 15rem);
     gap: 2.5rem;
     justify-content: center;
 }
